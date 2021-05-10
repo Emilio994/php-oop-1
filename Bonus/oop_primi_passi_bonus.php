@@ -24,8 +24,8 @@ class Movie {
 
 }
 
-$iron_Man = new Movie('Iron Man', 'Azione', 2005, 'English','Tony Stark');
-$superMan = new Movie('Superman', 'Azione', 2004, 'English', 'Clark Kent');
+$iron_Man = new Movie('Iron Man', 'Azione', 2005, 'English');
+$superMan = new Movie('Superman', 'Azione', 2004, 'English');
 ?>
 
 <div class="movies">

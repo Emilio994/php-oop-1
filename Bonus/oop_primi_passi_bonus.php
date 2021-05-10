@@ -28,23 +28,23 @@ $iron_Man = new Movie('Iron Man', 'Azione', 2005, 'English');
 $superMan = new Movie('Superman', 'Azione', 2004, 'English');
 ?>
 
-<div class="movies">
-    <div class="movie">
-    <?php foreach($iron_Man as $movie => $value) { ?>
-        <p><?php echo $movie . ' : ' . $value  ?></p>
-    <?php } ?>
-        <p><?php echo $iron_Man->getMovieAge() ?></p>
+    <div class="movies">
+        <div class="movie">
+        <?php foreach($iron_Man as $movie => $value) { ?>
+            <p><?php echo $movie . ' : ' . $value  ?></p>
+        <?php } ?>
+            <p><?php echo $iron_Man->getMovieAge() ?></p>
+        </div>
+        <hr>
+        
+        <div class="movie">
+        <?php foreach($superMan as $movie => $value) { ?>
+            <p><?php echo $movie . ' : ' . $value  ?></p>
+        <?php } ?>
+            <p><?php echo $superMan->getMovieAge() ?></p>
+        </div>
+        <hr>
     </div>
-    <hr>
-    
-    <div class="movie">
-    <?php foreach($superMan as $movie => $value) { ?>
-        <p><?php echo $movie . ' : ' . $value  ?></p>
-    <?php } ?>
-        <p><?php echo $superMan->getMovieAge() ?></p>
-    </div>
-    <hr>
-</div>
 
 </body>
 </html>
